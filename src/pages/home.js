@@ -16,7 +16,7 @@ class Home {
          </div>
          <div class="slide slide-2">
            <div class="slide-content">
-             <image src="src/images/wp4203788-denver-colorad-wallpapers.jpg" alt="Denver, Colorado" class="slide-image"/>
+             <image src="src/images/wp4203788-denver-colorado-wallpapers.jpg" alt="Denver, Colorado" class="slide-image"/>
              <h1>Denver, Colorado</h1>
              <p>Learn more about my background and experience.</p>
            </div>
