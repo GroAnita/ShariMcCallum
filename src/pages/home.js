@@ -9,57 +9,103 @@ class Home {
        <div class="home-slider">
          <div class="slide slide-1">
            <div class="slide-content">
-           <image src="src/images/berthoud-pass-in-colorado-cecelia-helwig.jpg" alt="Berthoud Pass, Colorado" class="slide-image"/>
-             <h1>Berthoud, Colorado</h1>
-             <p>Discover my projects and skills.</p>
+           <img src="src/images/berthoud-pass-in-colorado-cecelia-helwig.jpg" alt="Berthoud Pass, Colorado" class="slide-image"/>
+           <div class="slide-text-overlay">
+             <h1>Shari MacCallum</h1>
+                <p>Advanced Rolfing & Holistic Skin Care</p>
+                 <button class="slider-button">Berthoud, CO</button>
+            </div>    
+            
            </div>
          </div>
          <div class="slide slide-2">
            <div class="slide-content">
-             <image src="src/images/wp4203788-denver-colorado-wallpapers.jpg" alt="Denver, Colorado" class="slide-image"/>
+             <img src="src/images/wp4203788-denver-colorado-wallpapers.jpg" alt="Denver, Colorado" class="slide-image"/>
+             <div class="slide-text-overlay">
              <h1>Denver, Colorado</h1>
              <p>Learn more about my background and experience.</p>
+             <button class="slider-button">Denver, CO</button>
+            </div>
+                
            </div>
          </div>
          <div class="slide slide-3">
            <div class="slide-content">
-             <image src="src/images/minnesota-minneapolis.jpg" alt="Minnesota" class="slide-image"/>
+             <img src="src/images/minnesota-minneapolis.jpg" alt="Minnesota" class="slide-image"/>
+            <div class="slide-text-overlay">
              <h1>Minnesota</h1>
              <p>Contact me for collaborations or inquiries.</p>
+             <button class="slider-button">Contact Me</button>
+            </div>
            </div>
          </div>
+         <div class="prev-button">&#10094;</div>
+         <div class="next-button">&#10095;</div>
        </div>
+       <section class="image-intro">
+       <div class="intro-box">
+       <div class="img-container">
+         <img src="src/images/Shari-MacCallum-Rolfing-in-Denver-CO.webp" alt="Rolfing Session" class="intro-image"/>
+       </div>
+       <div class="text-container">
+         <h2>The Rolfing Works Ltd</h2>
+         <p>Unwind years of physical tension and stress with our expert Rolfing services.</p>
+         </div>
+         <button class="learn-more-button">Feel the difference</button>
+        
+       </div>
+       <div class="intro-box">
+         <div class="img-container">
+         <img src="src/images/Shari-MacCallum-Rolfing-in-Denver-CO.webp" alt="Holistic Face Aesthetics" class="intro-image"/>
+         </div>
+         <div class="text-container">
+         <h2>Holistic Face Aesthetics</h2>
+         <p>Reduce years of physical aging</p>
+         </div>
+            <button class="learn-more-button">See the difference</button>
+        
+       </div>
+       <div class="intro-box">
+            <div class="img-container">
+            <img src="src/images/Shari-MacCallum-Rolfing-in-Denver-CO.webp" alt="Schedule Appointment" class="intro-image"/>
+            </div>
+            <div class="text-container">
+         <h2>Schedule Appointment</h2>
+         <p>Get started today!</p>
+         </div>
+            <button class="learn-more-button">Book now</button>
+        
+       </div>
+       </section>
       </div>
     `;
   }
+  mount() {
+    this.initSlider();
+  }
+  initSlider() {
+    const slides = document.querySelectorAll(".slide");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+    let currentIndex = 0;
 
-  attachBallClickListeners() {
-    const navElements = document.querySelectorAll(".projects-ball, .nav-tile");
-
-    navElements.forEach((element) => {
-      element.addEventListener("click", (e) => {
-        e.preventDefault();
-        const route = element.getAttribute("data-route");
-
-        // Add appropriate animation class
-        if (element.classList.contains("projects-ball")) {
-          element.classList.add("morph-to-page");
-        } else {
-          element.classList.add("tile-fade-out");
-        }
-
-        // Navigate after animation completes
-        setTimeout(() => {
-          // Add base path if on GitHub Pages
-          const basePath = window.location.pathname.includes("/portfolio1")
-            ? "/portfolio1"
-            : "";
-          const fullPath = basePath + route;
-          window.history.pushState(null, null, fullPath);
-          window.dispatchEvent(new Event("popstate"));
-        }, 600);
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${100 * (i - index)}%)`;
       });
+    }
+
+    prevButton.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
     });
+
+    nextButton.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    showSlide(currentIndex);
   }
 }
 

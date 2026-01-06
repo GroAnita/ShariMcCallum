@@ -12,6 +12,7 @@ import ProductCbd from "./pages/product-cbd.js?v=4";
 import SignaturePackages from "./pages/signature-packages.js?v=4";
 import RolfingWorks from "./pages/the.rolfing-works-ltd.js?v=4";
 import WhatIsRolfing from "./pages/what-is-rolfing.js?v=4";
+import Contact from "./pages/contact.js?v=4";
 
 // Router class for handling SPA navigation
 class Router {
@@ -67,6 +68,9 @@ class Router {
     if (route.view) {
       const view = new route.view();
       document.querySelector("#app").innerHTML = await view.render();
+      if (typeof view.mount === "function") {
+        view.mount();
+      }
     }
   }
 
@@ -91,6 +95,7 @@ const routes = [
   { path: "/signature-packages", view: SignaturePackages },
   { path: "/the-rolfing-works-ltd", view: RolfingWorks },
   { path: "/what-is-rolfing", view: WhatIsRolfing },
+  { path: "/contact", view: Contact },
 ];
 
 export default Router;

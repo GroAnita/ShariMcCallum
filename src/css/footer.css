@@ -1,0 +1,33 @@
+.footer-logo-icon {
+  height: 100px;
+  width: 100px;
+  margin: 50px auto;
+}
+.footer-logo-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.footer-info {
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin-bottom: 20px;
+}
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer-links a:hover {
+  color: var(--secondary-color);
+}

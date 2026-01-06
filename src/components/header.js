@@ -16,7 +16,6 @@ class Header {
         <div class="header">
         <div class="logo-icon"><img src="${basePath}/src/images/Shari-MacCallum-Epona-Logo.webp" alt="Logo"></div>
         <nav id='menu'>
-        
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
   <ul>
     <li><a href='http://'>Home</a></li>
