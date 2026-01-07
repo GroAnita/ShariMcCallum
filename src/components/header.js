@@ -29,9 +29,9 @@ class Header {
     </li>
     <li><a class="dropdown-arrow" href='http://'>Holistic Face Aesthetics</a>
     <ul class='sub-menus'>
-      <li><a href='http://'>Holistic Services</a></li>
-      <li><a href='http://'>Facial Treatments</a></li>
-      <li><a href='http://'>Signature Packages</a></li>
+      <li><a href='holistic-services.js'>Holistic Services</a></li>
+      <li><a href='facial-treatments.js'>Facial Treatments</a></li>
+      <li><a href='signature-packages.js'>Signature Packages</a></li>
       <li><a href='http://'>Schedule a Consultation</a></li>
     </ul>
     </li>
