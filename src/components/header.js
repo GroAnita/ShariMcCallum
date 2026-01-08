@@ -5,6 +5,10 @@ class Header {
       { path: "/about", label: "About" },
       { path: "/projects", label: "Projects" },
       { path: "/contact", label: "Contact" },
+      { path: "/the-rolfing-works-ltd", label: "The Rolfing Works Ltd" },
+      { path: "/holistic-face-aesthetics", label: "Holistic Face Aesthetics" },
+      { path: "/equine-si", label: "Equine SI" },
+      { path: "/product-cbd", label: "CBD Salve with Arnica" },
     ];
   }
 
