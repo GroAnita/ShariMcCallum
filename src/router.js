@@ -1,5 +1,5 @@
-import Home from "./pages/Home.js?v=4";
-import About from "./pages/About.js?v=4";
+import Home from "./pages/home.js?v=4";
+import About from "./pages/about.js?v=4";
 import Berthoud from "./pages/berthoud-co.js?v=4";
 import Denver from "./pages/denver-co.js?v=4";
 import EquineSI from "./pages/Equine-SI.js?v=4";
