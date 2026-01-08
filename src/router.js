@@ -10,7 +10,7 @@ import HolisticServices from "./pages/holistic-services.js?v=4";
 import Locations from "./pages/locations.js?v=4";
 import ProductCbd from "./pages/product-cbd.js?v=4";
 import SignaturePackages from "./pages/signature-packages.js?v=4";
-import RolfingWorks from "./pages/the-rolfing-works-ltd.js?v=4";
+import TheRolfingWorksLtd from "./pages/the-rolfing-works-ltd.js?v=4";
 import WhatIsRolfing from "./pages/what-is-rolfing.js?v=4";
 import Contact from "./pages/contact.js?v=4";
 
@@ -93,7 +93,7 @@ const routes = [
   { path: "/locations", view: Locations },
   { path: "/product-cbd", view: ProductCbd },
   { path: "/signature-packages", view: SignaturePackages },
-  { path: "/the-rolfing-works-ltd", view: RolfingWorks },
+  { path: "/the-rolfing-works-ltd", view: TheRolfingWorksLtd },
   { path: "/what-is-rolfing", view: WhatIsRolfing },
   { path: "/contact", view: Contact },
 ];
