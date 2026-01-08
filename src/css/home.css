@@ -75,6 +75,13 @@
   margin-top: 15px;
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: transparent;
+}
+
 .slider-button:hover {
   background-color: #1f4e56;
   border: 2px solid #da9500;

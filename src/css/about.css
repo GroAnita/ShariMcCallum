@@ -1,0 +1,151 @@
+.about-page {
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+.about-content h1 {
+  font-family: var(--font-titles);
+  color: var(--text-colors);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-row-shari {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+.about-row-shari img {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+.about-text-shari {
+  width: 600px;
+  font-size: 16px;
+  font-family: var(--font-body);
+}
+
+.about-text-shari ul {
+  list-style-type: disc;
+  margin: 20px auto;
+}
+
+.about-text__ul-headlines {
+  font-weight: bold;
+  font-family: var(--font-titles);
+  margin-top: 15px;
+}
+
+.about-personal-journey {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-text-journey {
+  width: 500px;
+}
+
+.about-content h2 {
+  font-family: var(--font-titles);
+  margin-top: 0;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: var(--font-body);
+}
+
+.about-personal-journey img {
+  width: 250px;
+  height: 350px;
+  object-fit: contain;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-divider {
+  width: 80%;
+  margin: 40px auto;
+  border: 0;
+  border-top: 2px solid var(--secondary-color);
+}
+.about-structural-integration {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.about-text-structural {
+  width: 600px;
+}
+.about-structural-integration img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-holistic-aesthetics {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.about-holistic-text {
+  width: 600px;
+}
+
+.about-holistic-aesthetics img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .about-row-shari,
+  .about-personal-journey,
+  .about-structural-integration {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text-shari,
+  .about-text-journey,
+  .about-text-structural {
+    width: 100%;
+  }
+
+  .about-row-shari img,
+  .about-personal-journey img,
+  .about-structural-integration img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .about-content h1 {
+    font-size: 2rem;
+  }
+}

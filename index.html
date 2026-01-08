@@ -48,26 +48,28 @@
         ? "/portfolio1/"
         : "./";
 
-      document.write(
-        '<link rel="stylesheet" href="' + basePath + 'src/css/home.css">'
-      );
-      document.write(
-        '<link rel="stylesheet" href="' + basePath + 'src/css/header.css">'
-      );
-      document.write(
-        '<link rel="stylesheet" href="' + basePath + 'src/css/about.css">'
-      );
-      document.write(
-        '<link rel="stylesheet" href="' + basePath + 'src/css/footer.css">'
-      );
-      document.write(
-        '<link rel="stylesheet" href="' + basePath + 'src/css/variables.css">'
-      );
-      document.write(
-        '<link rel="icon" type="image/png" href="' +
-          basePath +
-          'src/images/Shari-MacCallum-Epona-Logo.webp">'
-      );
+      // Create and append stylesheet links
+      const stylesheets = [
+        "src/css/variables.css",
+        "src/css/home.css",
+        "src/css/header.css",
+        "src/css/about.css",
+        "src/css/footer.css",
+      ];
+
+      stylesheets.forEach((href) => {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = basePath + href;
+        document.head.appendChild(link);
+      });
+
+      // Create and append favicon
+      const favicon = document.createElement("link");
+      favicon.rel = "icon";
+      favicon.type = "image/png";
+      favicon.href = basePath + "src/images/Shari-MacCallum-Epona-Logo.webp";
+      document.head.appendChild(favicon);
     </script>
   </head>
   <body>

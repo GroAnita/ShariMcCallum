@@ -12,8 +12,10 @@ class Home {
            <img src="src/images/berthoud-pass-in-colorado-cecelia-helwig.jpg" alt="Berthoud Pass, Colorado" class="slide-image"/>
            <div class="slide-text-overlay">
                 <p>Advanced Rolfing <br/> and <br/> Holistic Skin Care</p>
+                <div class="button-group">
                  <button class="slider-button">Berthoud, CO</button>
                   <button class="slider-button">Denver, CO</button>
+                  </div>
             </div>    
             
            </div>

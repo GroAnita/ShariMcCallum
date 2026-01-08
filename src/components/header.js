@@ -17,37 +17,37 @@ class Header {
       
         <class ="header-top-nav">
         <nav id='menu'>
-  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <input type='checkbox' id='responsive-menu'><label></label>
   <ul>
-    <li><a href='http://'>Home</a></li>
-    <li><a class='dropdown-arrow' href='http://'>The Rolfing Works Ltd</a>
+    <li><a href='${basePath}/' data-link>Home</a></li>
+    <li><a class='dropdown-arrow' href="${basePath}/the-rolfing-works-ltd">The Rolfing Works Ltd</a>
       <ul class='sub-menus'>
-        <li><a href='what-is-rolfing.js'>What is Rolfing?</a></li>
-        <li><a href='Equine-SI.js'>Equine SI</a></li>
-        <li><a href='product-cbd.js'>CBD Salve with Arnica</a></li>
-        <li><a href='http://'>Schedule a session</a></li>
+        <li><a href='${basePath}/what-is-rolfing' data-link>What is Rolfing?</a></li>
+        <li><a href='${basePath}/equine-si' data-link>Equine SI</a></li>
+        <li><a href='${basePath}/product-cbd' data-link>CBD Salve with Arnica</a></li>
+        <li><a href='${basePath}/the-rolfing-works-ltd' data-link>Schedule a session</a></li>
       </ul>
     </li>
-    <li><a class="dropdown-arrow" href='http://'>Holistic Face Aesthetics</a>
+    <li><a class="dropdown-arrow">Holistic Face Aesthetics</a>
     <ul class='sub-menus'>
-      <li><a href='holistic-services.js'>Holistic Services</a></li>
-      <li><a href='facial-treatments.js'>Facial Treatments</a></li>
-      <li><a href='signature-packages.js'>Signature Packages</a></li>
-      <li><a href='http://'>Schedule a Consultation</a></li>
+      <li><a href='${basePath}/holistic-services' data-link>Holistic Services</a></li>
+      <li><a href='${basePath}/facial-treatments' data-link>Facial Treatments</a></li>
+      <li><a href='${basePath}/signature-packages' data-link>Signature Packages</a></li>
+      <li><a href='${basePath}/holistic-face-aesthetics' data-link>Schedule a Consultation</a></li>
     </ul>
     </li>
-    <li><a class='dropdown-arrow' href='http://'>About</a>
+    <li><a class='dropdown-arrow'>About</a>
       <ul class='sub-menus'>
-        <li><a href='http://'>Meet Shari MacCallum</a></li>
-        <li><a href='http://'>FAQs</a></li>
-        <li><a href='http://'>Blog</a></li>
+        <li><a href='${basePath}/about' data-link>Meet Shari MacCallum</a></li>
+        <li><a href='${basePath}/faq' data-link>FAQs</a></li>
+        <li><a href='#'>Blog</a></li>
       </ul>
     </li>
-    <li><a class='dropdown-arrow' href='http://'>Locations</a>
+    <li><a class='dropdown-arrow'>Locations</a>
     <ul class='sub-menus'>
-      <li><a href='http://'>Berthoud, Colorado</a></li>
-      <li><a href='http://'>Denver, Colorado</a></li>
-      <li><a href='http://'>Minnesota</a></li>
+      <li><a href='${basePath}/berthoud-co' data-link>Berthoud, Colorado</a></li>
+      <li><a href='${basePath}/denver-co' data-link>Denver, Colorado</a></li>
+      <li><a href='${basePath}/locations' data-link>Minnesota</a></li>
     </ul>
     </li>
   </ul>
