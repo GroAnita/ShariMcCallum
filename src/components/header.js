@@ -14,7 +14,8 @@ class Header {
       : "";
     return `
         <div class="header">
-        <div class="logo-icon"><img src="${basePath}/src/images/Shari-MacCallum-Epona-Logo.webp" alt="Logo"></div>
+      
+        <class ="header-top-nav">
         <nav id='menu'>
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
   <ul>
@@ -51,6 +52,17 @@ class Header {
     </li>
   </ul>
 </nav>
+</div>
+<div class="header-brand">
+  <div class="logo-icon"><img src="${basePath}/src/images/Shari-MacCallum-Epona-Logo.webp" alt="Logo"></div>
+  <div class="brand-text">
+  <div class="brand-name"><h1>Shari MacCallum</h1></div>
+  <div class="brand-tagline"><h2>Advanced Rolfing & Holistic Skin Care</h2></div>
+  </div>
+  <div class="spacer">
+  </div>
+  
+</div>
       <nav class="navbar">
         <div class="nav-brand">
         </div>

@@ -1,22 +1,25 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  justify-content: center;
   background-color: #333333;
   border-radius: 10px;
-  margin-bottom: 20px;
-  height: 200px;
-  position: relative;
+  margin: auto;
   font-family: var(--font-body);
+  padding: 20px 40px;
+  gap: 32px;
 }
 
 .logo-icon {
   height: 150px;
   width: 150px;
-  position: absolute;
-  top: 30px;
-  left: 50px;
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 180px;
+  max-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo-icon img {
   height: 100%;
@@ -24,13 +27,52 @@
   object-fit: contain;
 }
 
+.header-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #f5f5f5;
+  margin: 20px auto 20px auto;
+  padding: 10px 20px;
+  gap: 20px;
+  width: fit-content;
+  justify-content: center;
+  min-height: 180px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-text h1 {
+  color: var(--secondary-color);
+}
+.brand-tagline {
+  margin: 0;
+  z-index: 2;
+}
+
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: playfair display, serif;
+  margin: 0;
+  width: max-content;
+  z-index: 2;
+}
 #menu {
-  background: #333333;
   height: 50px;
   border-radius: 10px;
   width: 800px;
   margin: auto;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 10;
 }
 #menu ul,
 #menu li {
@@ -55,8 +97,8 @@
   font-size: 18px;
 }
 #menu a.dropdown-arrow:after {
-  content: "\25BE";
-  margin-left: 5px;
+  content: " ▼";
+  font-size: 12px;
 }
 #menu li a:hover {
   color: #333333;
@@ -74,30 +116,42 @@
 }
 #menu label {
   display: none;
-  line-height: 50px;
   text-align: center;
   position: absolute;
-  left: 35px;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  cursor: pointer;
+  background: rgba(51, 51, 51, 0.85);
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 #menu label:before {
-  font-size: 2.6em;
+  font-size: 4.6em;
   color: #f5f5f5;
   content: "\2261";
-  margin-left: 20px;
+  margin: 0;
+  padding: 0 20px;
 }
 #menu ul.sub-menus {
   height: auto;
   overflow: hidden;
   width: 180px;
-  background: #565656;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(179, 179, 179, 0.55);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
   position: absolute;
-  z-index: 9s9;
+  z-index: 99;
   display: none;
   border-radius: 8px;
 }
 #menu ul.sub-menus li {
   display: block;
   text-align: left;
+  background-color: blue;
   width: 100%;
 }
 #menu ul.sub-menus a {
@@ -113,18 +167,22 @@
 }
 
 @media screen and (max-width: 800px) {
+  .header-top-nav {
+    position: relative;
+  }
   #menu {
     position: relative;
     top: 0;
+    right: 0;
+    transform: none;
     width: 100%;
     height: 100%;
   }
   #menu ul {
     background: #333333;
     position: absolute;
-    top: 50px;
+    top: 0;
     right: 0;
-    left: 0;
     z-index: 39;
     height: auto;
     display: none;
@@ -147,12 +205,12 @@
   #menu input,
   #menu label {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    right: -20px;
     display: block;
   }
   #menu input {
-    z-index: 4;
+    z-index: 1002;
   }
   #menu input:checked + label {
     color: #f5f5f5;
@@ -163,11 +221,19 @@
   #menu input:checked ~ ul {
     display: block;
   }
-  .logo-icon {
-    position: absolute;
-    top: 10px;
-    left: 110px;
-    margin: auto;
-    z-index: 5;
+  .header-brand {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .brand-name h1 {
+    font-size: 2rem;
+  }
+  .brand-tagline h2 {
+    font-size: 1.2rem;
+  }
+  .header {
+    display: block;
+    height: 0;
+    padding: 0;
   }
 }

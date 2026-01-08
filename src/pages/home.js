@@ -11,9 +11,9 @@ class Home {
            <div class="slide-content">
            <img src="src/images/berthoud-pass-in-colorado-cecelia-helwig.jpg" alt="Berthoud Pass, Colorado" class="slide-image"/>
            <div class="slide-text-overlay">
-             <h1>Shari MacCallum</h1>
-                <p>Advanced Rolfing & Holistic Skin Care</p>
+                <p>Advanced Rolfing <br/> and <br/> Holistic Skin Care</p>
                  <button class="slider-button">Berthoud, CO</button>
+                  <button class="slider-button">Denver, CO</button>
             </div>    
             
            </div>
@@ -22,9 +22,8 @@ class Home {
            <div class="slide-content">
              <img src="src/images/wp4203788-denver-colorado-wallpapers.jpg" alt="Denver, Colorado" class="slide-image"/>
              <div class="slide-text-overlay">
-             <h1>Denver, Colorado</h1>
              <p>Learn more about my background and experience.</p>
-             <button class="slider-button">Denver, CO</button>
+             <button class="slider-button">About Me</button>
             </div>
                 
            </div>
