@@ -9,14 +9,17 @@ class About {
 			<div class="about-page">
       <div class="about-content">
 				<h1>Meet Shari MacCallum</h1>
-        <div class="about-row-shari">
+        <section class="about-row-shari">
           <div class="about-image-shari">
             <img src="src/images/shari-headshot.png" alt="Shari MacCallum"/>
           </div>
           <div class="about-text-shari">
-            <p>At the heart of The Rolfing Works Ltd and Holistic Face Aesthetics, founder Shari MacCallum combines over three decades of expertise in Rolfing® Structural Integration with advanced training in Holistic Aesthetics. Her passion is helping people — and even horses — move, feel, and look their best through precision-based bodywork and natural, restorative skin care.</p>
-            <p>Shari’s services bring together the best of bodywork and aesthetics, including:
-            </p>
+            <p>At the heart of The Rolfing Works Ltd and Holistic Face Aesthetics, founder Shari MacCallum combines over three decades of expertise in Rolfing® Structural Integration with advanced training in Holistic Aesthetics. <br>Her passion is helping people — and even horses — move, feel, and look their best through precision-based bodywork and natural, restorative skin care.</p>
+            </div>
+              </section>
+            <section class="about-services-list">
+            <h3>Shari’s services bring together the best of <br> bodywork and aesthetics, including:
+            </h3>
             <ul>
               <li><p class="about-text__ul-headlines"> Ashiatsu Oriental Bar Therapy </p> - A deep tissue massage performed by the practitioner’s feet, excellent for back pain and bilateral therapy.</li>
               <li><p class="about-text__ul-headlines">Rolfing®</p > - Addresses chronic pain, improves posture, and helps individuals rediscover natural movement.</li>
@@ -24,9 +27,9 @@ class About {
               <li><p class="about-text__ul-headlines">Aromatherapy</p> - Available with all services to enhance relaxation and healing.</li>
               <li><p class="about-text__ul-headlines">Advanced Holistic Skincare</p> - Gentle, restorative facial aesthetics designed to improve tone, texture, and natural radiance. </li>
             </ul>
-          </div>
-        </div>
-        <hr class="about-divider"/>
+            </section>
+          
+      
         <div class="about-personal-journey">
         <div class="about-image-journey">
             <img src="src/images/shari-cyclist.webp" alt="Shari MacCallum competitive cyclist"/>

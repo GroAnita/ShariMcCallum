@@ -1,5 +1,4 @@
 .about-page {
-  background-color: var(--background-color);
   min-height: 100vh;
 }
 
@@ -28,7 +27,7 @@
   gap: 20px;
 }
 .about-row-shari img {
-  width: 450px;
+  width: 350px;
   height: auto;
   border-radius: 10px;
 }
@@ -36,17 +35,36 @@
   width: 600px;
   font-size: 16px;
   font-family: var(--font-body);
+  letter-spacing: 0.01rem;
 }
 
-.about-text-shari ul {
-  list-style-type: disc;
-  margin: 20px auto;
+.about-services-list {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+}
+.about-services-list ul {
+  background-color: #3a3a3a;
+}
+.about-services-list li {
+  list-style: none;
+  background-color: #3a3a3a;
 }
 
 .about-text__ul-headlines {
   font-weight: bold;
   font-family: var(--font-titles);
   margin-top: 15px;
+  color: var(--secondary-color);
+  background-color: transparent;
+}
+
+.about-text__ul-headlines p {
+  margin: 0;
+  background-color: #3a3a3a;
 }
 
 .about-personal-journey {
@@ -74,6 +92,14 @@
   margin-bottom: 15px;
   font-size: 18px;
   font-family: var(--font-body);
+}
+.about-services-list h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: var(--font-body);
+  letter-spacing: 0.05rem;
+  background-color: transparent;
 }
 
 .about-personal-journey img {
