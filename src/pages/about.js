@@ -45,7 +45,7 @@ class About {
 She emphasizes the mind-body connection: just as the mind can make poor posture feel “normal,” it can also be retrained to make balanced movement feel natural. This awareness becomes second nature, supported by muscle memory and presence.</p>
           </div>
           <div class="about-structural-image">
-            <img src="src/images/shari-rolfing.webp" alt="Shari MacCallum Rolfing session"/>
+            <img src="src/images/Shari-rolfing.webp" alt="Shari MacCallum Rolfing session"/>
           </div>
        </div>
         <hr class="about-divider"/>
