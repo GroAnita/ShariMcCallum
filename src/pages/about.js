@@ -5,6 +5,7 @@ class About {
 
   async render() {
     return `
+    <hr class="hr-divider-top"/>
 			<div class="about-page">
       <div class="about-content">
 				<h1>Meet Shari MacCallum</h1>

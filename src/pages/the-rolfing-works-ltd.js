@@ -5,6 +5,7 @@ class TheRolfingWorksLtd {
 
   async render() {
     return `
+      <hr class="hr-divider-top"/>
 			<div class="rolfingworks-page">
       <div class="rolfingworks-content">
 				<h1>Welcome to The Rolfing Works Ltd</h1>
@@ -12,7 +13,11 @@ class TheRolfingWorksLtd {
         <p>Whether you are seeking relief from chronic pain, looking to improve posture and body alignment, or supporting your equine partner in competition or training, our work focuses on creating lasting, life-changing results.
         </p>
 
+        <hr class="rolfingworks-divider"/>
+
         <div class="rolfing-si">
+
+        <div class="rolfing-si-content">
         <div class="rolfing-si-text">
           <h2>Rolfing® Structural Integration</h2>
           <p>Rolfing® is a precise myofascial technique that addresses the body’s connective tissue to improve posture, movement patterns, and overall balance. Through a series of sessions, we work to realign the body, release tension, and enhance coordination, helping clients rediscover natural movement and ease.</p>
@@ -20,21 +25,29 @@ class TheRolfingWorksLtd {
           <div class="rolfing-si-image">
             <img src="src/images/Shari-MacCallum-Rolfing-in-Denver-CO.webp" alt="Rolfing Session"/>
           </div>
+        </div>
           <button class="learn-more-button">Learn More about Rolfing®</button>
         </div>
 
+        <hr class="rolfingworks-divider"/>
+
         <div class="equine-si">
+        <div class="equine-si-content">
         <div class="equine-si-image">
-            <img src="src/images/Shari-MacCallum-Equine-Rolfing.webp" alt="Equine Rolfing Session"/>
+            <img src="src/images/Equestrian-Rolfing-2.webp" alt="Equine Rolfing Session"/>
           </div>
           <div class="equine-si-text">
           <h2>Equine Structural Integration</h2>
           <p>As riders and trainers know, a horse’s movement and comfort directly reflect the rider’s body and alignment. Shari’s advanced training extends into equine Rolfing®, offering horses improved biomechanics, greater comfort under saddle, and long-term soundness.</p>
           </div>
+        </div>
           <button class="learn-more-button">Learn More about Equine SI</button>
         </div>
 
+        <hr class="rolfingworks-divider"/>
+
         <div class="why-choose-us">
+        <div class="why-choose-us-content">
         <div class="why-choose-us-text">
           <h2>Why Choose The Rolfing Works Ltd?</h2>
           <ul>
@@ -45,17 +58,21 @@ class TheRolfingWorksLtd {
           </ul>
           </div>
           <div class="why-choose-us-image">
-            <img src="src/images/Shari-MacCallum-Rolfing-Client-Testimonial.webp" alt="Happy Rolfing Client"/>
+            <img src="src/images/Equestrain-Head-shots.webp" alt="Happy Rolfing Client"/>
+            </div>
           </div>
           <button class="learn-more-button">Schedule a Session</button>
         </div>
 
+        <hr class="rolfingworks-divider"/>
+
         <div class="take-the-first-step">
           <h2>Take the First Step Towards Lasting Change</h2>
-          <p>Discover how The Rolfing Works Ltd can help you or your horse achieve greater comfort, balance, and performance. Contact us today to schedule a consultation and begin your journey to optimal well-being.</p>
+          <p>Discover how The Rolfing Works Ltd can support improved comfort, balance, and performance for both people and horses.</p>
+          <p> <strong>Contact us today to schedule a consultation and take the first step toward optimal well-being.</strong></p>
           <button class="learn-more-button">Contact Us</button>
+          </div>
         </div>
-      </div>
 			</div>
 		`;
   }

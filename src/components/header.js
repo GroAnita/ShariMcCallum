@@ -17,14 +17,23 @@ class Header {
       ? "/ShariMcCallum"
       : "";
     return `
-        <div class="header">
-      
+        <header>
+      <div class="header-brand">
+  <div class="logo-icon"><img src="${basePath}/src/images/Shari-MacCallum-Epona-Logo.webp" alt="Logo"></div>
+  <div class="brand-text">
+  <div class="brand-name"><h1>Shari MacCallum</h1></div>
+  <div class="brand-tagline"><h2>Advanced Rolfing & Holistic Skin Care</h2></div>
+  </div>
+  <div class="spacer">
+  </div>
+  
+</div>
         <class ="header-top-nav">
         <nav id='menu'>
   <input type='checkbox' id='responsive-menu'><label></label>
   <ul>
     <li><a href='${basePath}/' data-link>Home</a></li>
-    <li><a class='dropdown-arrow' href="${basePath}/the-rolfing-works-ltd">The Rolfing Works Ltd</a>
+    <li><a class='dropdown-arrow' href="${basePath}/the-rolfing-works-ltd" data-link>The Rolfing Works Ltd</a>
       <ul class='sub-menus'>
         <li><a href='${basePath}/what-is-rolfing' data-link>What is Rolfing?</a></li>
         <li><a href='${basePath}/equine-si' data-link>Equine SI</a></li>
@@ -57,23 +66,12 @@ class Header {
   </ul>
 </nav>
 </div>
-<div class="header-brand">
-  <div class="logo-icon"><img src="${basePath}/src/images/Shari-MacCallum-Epona-Logo.webp" alt="Logo"></div>
-  <div class="brand-text">
-  <div class="brand-name"><h1>Shari MacCallum</h1></div>
-  <div class="brand-tagline"><h2>Advanced Rolfing & Holistic Skin Care</h2></div>
-  </div>
-  <div class="spacer">
-  </div>
-  
-</div>
-      <nav class="navbar">
-        <div class="nav-brand">
-        </div>
+
+   
         
             </header>
           
-      </nav>
+  
     `;
   }
 }

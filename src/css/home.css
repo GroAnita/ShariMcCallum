@@ -185,7 +185,6 @@
 
 .learn-more-button:hover {
   background-color: #1f4e56;
-  border: 2px solid #da9500;
 }
 
 .text-container {
@@ -193,6 +192,12 @@
   background-color: #1f4e56;
 }
 
+.hr-divider-top {
+  width: 80%;
+  margin: 40px auto;
+  border: 0;
+  border-top: 2px solid var(--primary-color);
+}
 @media (max-width: 700px) {
   .home-slider {
     max-width: 100%;

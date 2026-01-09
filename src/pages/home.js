@@ -5,6 +5,7 @@ class Home {
 
   async render() {
     return `
+        <hr class="hr-divider-top"/>
       <div class="home-page">
        <div class="home-slider">
          <div class="slide slide-1">
