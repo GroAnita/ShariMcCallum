@@ -137,7 +137,7 @@
 #menu ul.sub-menus {
   height: auto;
   overflow: hidden;
-  width: 180px;
+  width: 200px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(179, 179, 179, 0.55);

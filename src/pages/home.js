@@ -58,7 +58,7 @@ class Home {
        </div>
        <div class="intro-box">
          <div class="img-container">
-         <img src="src/images/Shari-MacCallum-Rolfing-in-Denver-CO.webp" alt="Holistic Face Aesthetics" class="intro-image"/>
+         <img src="src/images/holistic-face.webp" alt="Holistic Face Aesthetics" class="intro-image"/>
          </div>
          <div class="text-container">
          <h2>Holistic Face Aesthetics</h2>
