@@ -130,6 +130,14 @@
   margin-bottom: 10px;
   color: var(--text-color);
   font-family: var(--font-body);
+  list-style: none;
+}
+
+.why-choose-us-text p {
+  margin: 0;
+  background-color: transparent;
+  padding: 0;
+  color: var(--secondary-color);
 }
 
 .why-choose-us-image img {
