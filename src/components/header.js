@@ -9,6 +9,15 @@ class Header {
       { path: "/holistic-face-aesthetics", label: "Holistic Face Aesthetics" },
       { path: "/equine-si", label: "Equine SI" },
       { path: "/product-cbd", label: "CBD Salve with Arnica" },
+      { path: "/holistic-services", label: "Holistic Services" },
+      { path: "/facial-treatments", label: "Facial Treatments" },
+      { path: "/signature-packages", label: "Signature Packages" },
+      { path: "/locations", label: "Locations" },
+      { path: "/faq", label: "FAQs" },
+      { path: "/what-is-rolfing", label: "What is Rolfing?" },
+      { path: "/berthoud-co", label: "Berthoud, CO" },
+      { path: "/denver-co", label: "Denver, CO" },
+      { path: "/contact", label: "Contact" },
     ];
   }
 
@@ -46,7 +55,7 @@ class Header {
       <li><a href='${basePath}/holistic-services' data-link>Holistic Services</a></li>
       <li><a href='${basePath}/facial-treatments' data-link>Facial Treatments</a></li>
       <li><a href='${basePath}/signature-packages' data-link>Signature Packages</a></li>
-      <li><a href='${basePath}/holistic-face-aesthetics' data-link>Schedule a Consultation</a></li>
+      <li><a href='${basePath}/contact' data-link>Schedule a Consultation</a></li>
     </ul>
     </li>
     <li><a class='dropdown-arrow'>About</a>

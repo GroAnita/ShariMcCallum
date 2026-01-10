@@ -1,0 +1,158 @@
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.contact-text {
+  max-width: 600px;
+  font-family: var(--font-body);
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.6;
+}
+.contact-text h1 {
+  font-family: var(--font-titles);
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact-text h2 {
+  font-family: var(--font-titles);
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-form {
+  background-color: #3a3a3a;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+  max-width: 500px;
+  width: 100%;
+  color: var(--text-color);
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: transparent;
+  font-family: var(--font-body);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-body);
+  color: var(--text-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  background-color: #3a3a3a;
+}
+.contact-form textarea:valid,
+.contact-form input:valid {
+  border-color: var(--secondary-color);
+  outline: none;
+  background-color: #3a3a3a;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset;
+  -webkit-text-fill-color: var(--text-color);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.contact-form select:focus,
+.contact-form select:valid {
+  border-color: var(--secondary-color);
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #da9500;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.contact-form option {
+  background-color: #3a3a3a;
+  color: var(--text-color);
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: #3a3a3a;
+}
+
+.contact-text a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.business-hours {
+  margin-top: 10px;
+  color: var(--secondary-color);
+}
+
+.contact-text i {
+  margin-right: 8px;
+  color: var(--text-color);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+@media (max-width: 800px) {
+  .contact-page {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-text,
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+  }
+}

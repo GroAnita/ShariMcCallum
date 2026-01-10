@@ -3,13 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #333333;
   border-radius: 10px;
   margin: 20px auto;
   font-family: var(--font-body);
   padding: 20px 40px;
   gap: 32px;
-  border-bottom: 2px solid var(--secondary-color);
 }
 
 .logo-icon {
