@@ -14,8 +14,8 @@ class Home {
            <div class="slide-text-overlay">
                 <p>Advanced Rolfing <br/> and <br/> Holistic Skin Care</p>
                 <div class="button-group">
-                 <button class="slider-button">Berthoud, CO</button>
-                  <button class="slider-button">Denver, CO</button>
+                 <button class="slider-button" data-target="berthoud">Berthoud, CO</button>
+                  <button class="slider-button" data-target="denver">Denver, CO</button>
                   </div>
             </div>    
             
@@ -26,7 +26,7 @@ class Home {
              <img src="src/images/wp4203788-denver-colorado-wallpapers.jpg" alt="Denver, Colorado" class="slide-image"/>
              <div class="slide-text-overlay">
              <p>Learn more about my background and experience.</p>
-             <button class="slider-button">About Me</button>
+             <button class="slider-button" data-target="about">About Me</button>
             </div>
                 
            </div>
@@ -37,7 +37,7 @@ class Home {
             <div class="slide-text-overlay">
              <h1>Minnesota</h1>
              <p>Contact me for collaborations or inquiries.</p>
-             <button class="slider-button">Contact Me</button>
+             <button class="slider-button" data-target="contact">Contact Me</button>
             </div>
            </div>
          </div>
@@ -89,6 +89,7 @@ class Home {
     const slides = document.querySelectorAll(".slide");
     const prevButton = document.querySelector(".prev-button");
     const nextButton = document.querySelector(".next-button");
+    const sliderButtons = document.querySelectorAll(".slider-button");
     let currentIndex = 0;
 
     function showSlide(index) {
@@ -105,6 +106,28 @@ class Home {
     nextButton.addEventListener("click", () => {
       currentIndex = (currentIndex + 1) % slides.length;
       showSlide(currentIndex);
+    });
+
+    sliderButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        const target = button.dataset.target;
+        const basePath = window.location.pathname.includes("/ShariMcCallum")
+          ? "/ShariMcCallum"
+          : "";
+
+        // Map targets to actual routes
+        const routeMap = {
+          berthoud: "/berthoud-co",
+          denver: "/denver-co",
+          about: "/about",
+          contact: "/contact",
+        };
+
+        const route = routeMap[target] || `/${target}`;
+        history.pushState(null, null, basePath + route);
+        window.dispatchEvent(new PopStateEvent("popstate"));
+      });
     });
 
     showSlide(currentIndex);
