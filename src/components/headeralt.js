@@ -54,7 +54,7 @@ class Headeralt {
       <ul class='sub-menus'>
         <li><a href='${basePath}/about' data-link>Meet Shari MacCallum</a></li>
         <li><a href='${basePath}/faq' data-link>FAQs</a></li>
-        <li><a href='#'>Blog</a></li>
+        <li><a href='#'>Blog.</a></li>
       </ul>
     </li>
     <li><a class='dropdown-arrow'>Locations</a>
